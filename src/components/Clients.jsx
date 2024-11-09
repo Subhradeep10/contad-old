@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ClientBackground from "../assets/imagescontadnew/Clients.png";
 
 const Clients = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out",
+    });
+  }, []);
   const clientNames = [
     "Damodar Valley Corporation",
     "DP Ahuja & Company",
@@ -35,7 +44,11 @@ const Clients = () => {
         alt=""
       />
 
-      <div className="absolute top-[140px] left-[920px] text-left text-md">
+      <div
+        className="absolute top-[140px] left-[920px] text-left text-md"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+      >
         {clientNames.map((client, index) => (
           <div key={index}>{client}</div>
         ))}

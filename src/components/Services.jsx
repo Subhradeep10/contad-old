@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ServiceImage from "../assets/imagescontadnew/Services.png";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out",
+    });
+  }, []);
   return (
     <div className="relative text-center h-[110vh] bg-cover flex">
       <img
@@ -10,7 +19,11 @@ const Services = () => {
         alt=""
       />
       <div className="absolute left-[700px] top-[40px]">
-        <p className="text-md text-black text-left w-[450px]">
+        <p
+          className="text-md text-black text-left w-[450px]"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           Ours is an all-around approach. What we pride ourselves in, is years
           of proven as well as much-commended experience in delivering solutions
           from planning, through media, digital to events & exhibitions. For
@@ -32,10 +45,18 @@ const Services = () => {
           for events and exhibitions, fabrication, installation, organization).
         </p>
       </div>
-      <div className="text-3xl text-gray-500 absolute left-[1200px] bottom-[430px] text-left">
+      <div
+        className="text-3xl text-gray-500 absolute left-[1200px] bottom-[430px] text-left"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
         services
       </div>
-      <div className="text-xl absolute left-[1200px] bottom-[60px] text-left leading-10">
+      <div
+        className="text-xl absolute left-[1200px] bottom-[60px] text-left leading-10"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
         <div>
           {" "}
           <span className="text-red-500">PLANNING</span> SOLUTIONS

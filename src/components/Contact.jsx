@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ContactBg from "../assets/imagescontadnew/Contact.png";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out",
+    });
+  }, []);
   return (
     <div className="relative text-center h-[110vh] bg-cover flex">
       <img
@@ -9,7 +18,11 @@ const Contact = () => {
         className="-z-10 h-[110vh] w-[100vw] bg-cover absolute"
         alt=""
       />
-      <div className="absolute left-[1000px] top-[250px] text-lg text-left">
+      <div
+        className="absolute left-[1000px] top-[250px] text-lg text-left"
+        data-aos="fade-right"
+        data-aos-delay="700"
+      >
         <b className="text-2xl">Kolkata</b>
         <br />
         56D Mirza Ghalib Street | Kolkata 700 016 <br />
@@ -17,7 +30,11 @@ const Contact = () => {
         <b>E </b>
         confiad.cal@gmail.com
       </div>
-      <div className="absolute left-[1000px] top-[380px] text-lg text-left">
+      <div
+        className="absolute left-[1000px] top-[380px] text-lg text-left"
+        data-aos="fade-right"
+        data-aos-delay="700"
+      >
         <b className="text-2xl">Bhubaneswar</b>
         <br />
         Flat # 206 | Second Floor | Block A | Bharati Tower | Forest Park (Near
@@ -26,7 +43,11 @@ const Contact = () => {
         <b>P </b>+91 674 2235 4462 | <b>E </b>
         confiadbbr@gmail.com
       </div>
-      <div className="absolute left-[1000px] top-[530px] text-lg text-left">
+      <div
+        className="absolute left-[1000px] top-[530px] text-lg text-left"
+        data-aos="fade-right"
+        data-aos-delay="700"
+      >
         <b className="text-2xl">New Delhi</b>
         <br />
         Third Floor | E6 Kalkaji | New Delhi 110 019
