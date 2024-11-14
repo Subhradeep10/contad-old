@@ -53,7 +53,7 @@ const Services = () => {
         services
       </div>
       <div
-        className="text-xl absolute left-[1200px] bottom-[60px] text-left leading-10"
+        className="text-md absolute left-[1200px] bottom-[180px] text-left leading-10"
         data-aos="fade-up"
         data-aos-delay="500"
       >
