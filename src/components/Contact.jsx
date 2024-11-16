@@ -19,7 +19,7 @@ const Contact = () => {
         alt=""
       />
       <div
-        className="absolute left-[1000px] top-[250px] text-lg text-left"
+        className="absolute left-[800px] top-[250px] text-md text-left"
         data-aos="fade-right"
         data-aos-delay="700"
       >
@@ -31,7 +31,7 @@ const Contact = () => {
         confiad.cal@gmail.com
       </div>
       <div
-        className="absolute left-[1000px] top-[380px] text-lg text-left"
+        className="absolute left-[800px] top-[380px] text-md text-left"
         data-aos="fade-right"
         data-aos-delay="700"
       >
@@ -44,7 +44,7 @@ const Contact = () => {
         confiadbbr@gmail.com
       </div>
       <div
-        className="absolute left-[1000px] top-[530px] text-lg text-left"
+        className="absolute left-[800px] top-[530px] text-md text-left"
         data-aos="fade-right"
         data-aos-delay="700"
       >

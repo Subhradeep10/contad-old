@@ -26,7 +26,7 @@ const Portfolio = () => {
         data-aos-delay="500"
       />
       <div
-        className="absolute top-[140px] left-[600px] text-left text-lg w-[700px]"
+        className="absolute top-[140px] left-[600px] text-left text-md w-[700px]"
         data-aos="fade-up"
         data-aos-delay="500"
       >

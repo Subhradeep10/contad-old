@@ -18,9 +18,9 @@ const Services = () => {
         className="-z-10 h-[110vh] w-[100vw] bg-cover absolute"
         alt=""
       />
-      <div className="absolute left-[700px] top-[40px]">
+      <div className="absolute left-[600px] top-[40px]">
         <p
-          className="text-md text-black text-left w-[450px]"
+          className="text-sm text-black text-left w-[500px]"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -46,14 +46,14 @@ const Services = () => {
         </p>
       </div>
       <div
-        className="text-3xl text-gray-500 absolute left-[1200px] bottom-[430px] text-left"
+        className="text-3xl text-gray-500 absolute left-[1150px] bottom-[430px] text-left"
         data-aos="fade-up"
         data-aos-delay="500"
       >
         services
       </div>
       <div
-        className="text-md absolute left-[1200px] bottom-[180px] text-left leading-10"
+        className="text-md absolute left-[1150px] bottom-[180px] text-left leading-10"
         data-aos="fade-up"
         data-aos-delay="500"
       >
